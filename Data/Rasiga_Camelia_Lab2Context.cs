@@ -15,5 +15,7 @@ namespace Rasiga_Camelia_Lab2.Data
         }
 
         public DbSet<Rasiga_Camelia_Lab2.Models.Book> Book { get; set; } = default!;
+
+        public DbSet<Rasiga_Camelia_Lab2.Models.Publisher>? Publisher { get; set; }
     }
 }

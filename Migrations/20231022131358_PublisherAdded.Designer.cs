@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Rasiga_Camelia_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Rasiga_Camelia_Lab2.Data;
 namespace Rasiga_Camelia_Lab2.Migrations
 {
     [DbContext(typeof(Rasiga_Camelia_Lab2Context))]
-    partial class Rasiga_Camelia_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231022131358_PublisherAdded")]
+    partial class PublisherAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
